@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP HTML</title>
+    <style>
+        table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: rgb(168, 167, 167);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 200px;
+            padding: 5px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 50px;
+            padding: 5px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>Estructura Básica del Documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de
+            metadatos y un título</p>
+    </header>
+    <nav> 
+        -------------------------Este es el nav-----------------------------------
+    </nav>
+    <main>
+        <section id="post-inicio">
+            <article>
+                <h1>2. Encabezados y Propiedades del texto</h1>
+                <h2 style="font-style: italic;">Encabezado 2 cursiva</h2>
+                <h3 style="font-weight: bolder;">Encabezado Negrita</h3>
+                <h4 style="text-decoration: underline;">Encabezado 4</h4>
+                <h5>Encabezado 5</h5>
+                <h6>Encabezado 6</h6>
+            </article>
+        </section>
+
+        <section>
+                <h1>3.Divisiones y Agrupación de Contenido</h1>
+                <article>
+                    Seccion 1
+                    <div>Contenido de la seccion</div>
+                </article>
+                <article>
+                    Seccion 2
+                    <div>Contenido de la seccion</div>
+                </article>
+
+        </section>
+
+        
+        <section>
+            <article>
+                <h1>4. Listas</h1>
+                <h2>Listas Ordenadas</h2>
+                <ol>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#post-inicio">Post-inicio</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                </ol>
+                <h2>Listas Desordenadas</h2>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1>5. Elementos Multimedia</h1>
+                <img style="width: 50px;"
+                    src="https://64.media.tumblr.com/01a7ef93ef4f65b27f7d08b4cf24199f/d81553b07ae0f036-3f/s2048x3072/e2c0d270cc6f90d88ca071805ee89b4ce354967b.pnj"
+                    alt="Goku SSJ">
+                <video style="width: 150px;"
+                    src="assets/Goku se convierte Super saiyan legendario audio latino ( 1080p HD).mp4"
+                    controls></video>
+                <audio style="width: 300px; height: 50px;" src="assets/lofi songs for slow days.mp3" controls></audio>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1>6. Tablas</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="formulario">
+            <article>
+                <h2>7.Formularios</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>-----------------Este es el footer---------------------</p>
+    </footer>
+</body>
+
+</html>
